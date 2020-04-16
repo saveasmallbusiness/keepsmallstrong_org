@@ -24,21 +24,21 @@ Install the Gatsby CLI:
 npm i --global gatsby-cli
 ```
 
-Build a stylesheet from your Tailwind CSS config and run the project in development mode:
-
-```sh
-cd keepsmallstrong_org
-npm run develop
-```
-
 ## Format and lint
 
 - `npm run analyze` - See what ESLint and Prettier can fix
 - `npm run fix` - Run Prettier and ESLint with the `--fix` option
 
-## Build your site
+## Running locally
 
-Use `npm run build` to build your site for production.
+- Save `.env.development.local.example` as `.env.development.local`
+- Populate the ALGOLIA env vars in this file
+- Request the env vars by reaching out to one of the contributors on Linkedin
+
+```sh
+nvm use && yarn install
+yarn start
+```
 
 ## Resources
 

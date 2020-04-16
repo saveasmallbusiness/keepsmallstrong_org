@@ -1,0 +1,158 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+.transform-neg-50 {
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .md\:transform-neg-50 {
+    transform: translateY(-50%);
+  }
+}
+
+.transform-none {
+  transform: none;
+}
+
+.ais-Hits-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .ais-Hits-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ais-Hits-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 30px;
+  }
+}
+
+.ais-SearchBox {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .ais-SearchBox {
+    width: 80%;
+  }
+}
+
+.rob {
+  width: 100%;
+}
+
+.ais-SearchBox form, .ais-SearchBox input {
+  width: 100%;
+}
+
+.ais-SearchBox form {
+  position: relative;
+}
+
+.ais-SearchBox input {
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 0 20px;
+}
+
+.ais-SearchBox .ais-SearchBox-submit {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ais-SearchBox .ais-SearchBox-submit svg {
+  width: 30px;
+  height: 30px;
+}
+
+.ais-SearchBox-reset {
+  display: none;
+}
+
+.ais-Pagination, .ais-Pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ais-Pagination-item {
+  font-size: 1.875rem;
+  margin: 0 15px;
+}
+
+.ais-Pagination-item--disabled {
+  opacity: 0.3;
+}
+
+.ais-Pagination-item--page .ais-Pagination-link {
+  padding: 2rem;
+  border: 2px solid #222239;
+  color: #222239;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  opacity: 1;
+  transition: background 0.3s;
+}
+
+.ais-Pagination-item--page .ais-Pagination-link:hover {
+  background: rgb(34, 34, 57, 0.2);
+}
+
+.ais-Pagination-item--page .ais-Pagination-link.ais-Pagination-link--selected {
+  background: #222239;
+  color: #fff;
+}
+
+.ais-Pagination-item--nextPage,
+.ais-Pagination-item--previousPage,
+.ais-Pagination-item--firstPage,
+.ais-Pagination-item--lastPage {
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ais-Pagination-item--nextPage *,
+.ais-Pagination-item--previousPage *,
+.ais-Pagination-item--firstPage *,
+.ais-Pagination-item--lastPage * {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ais-Pagination-item {
+    font-size: 1.3rem;
+    margin: 0 10px;
+  }
+
+  .ais-Pagination-item--page .ais-Pagination-link {
+    padding: 1.25rem 1.25rem 1.4rem 1.25rem;
+  }
+
+  .ais-Pagination-item--page .ais-Pagination-link.ais-Pagination-link--selected {
+    padding: 1.25rem 1.25rem 1.4rem 1.25rem;
+  }
+}
+
+
