@@ -1,0 +1,6 @@
+.eslintignore
+.eslintrc.js
+package.json
+node_modules
+yarn.lock
+src/svg/**/*.js
