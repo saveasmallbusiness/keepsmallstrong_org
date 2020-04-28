@@ -24,7 +24,7 @@ function MissionPage() {
           </p>
 
           <p className="mb-6">
-            Small business in America are not only the embodiment of The Dream,
+            Small businesses in America are not only the embodiment of The Dream,
             <br className="hidden md:block" />
             they’re responsible for nearly half of our economy and two-thirds of all new job creation.
             <br className="hidden md:block" />
