@@ -37,7 +37,7 @@ const Home = () => (
     </section>
 
     <div id="sponsors" />
-    <section className="py-12 md:py-24">
+    <section className="py-12 md:py-24 bg-accent">
       <Sponsors />
     </section>
 
