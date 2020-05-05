@@ -17,7 +17,7 @@ const Home = () => (
     </section>
 
     <div id="ctas" />
-    <section className="pb-6 md:pb-24 bg-accent">
+    <section className="pb-6 md:pb-24">
       <MainCTA />
     </section>
 
