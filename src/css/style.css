@@ -139,7 +139,12 @@
 .ais-Pagination-item--lastPage * {
   height: 100%;
 }
-
+.pad-Bottom {
+  padding-bottom: 25px;
+}
+.pad-Top {
+  padding-top: 25px;
+}
 @media only screen and (max-width: 600px) {
   .ais-Pagination-item {
     font-size: 1.3rem;
