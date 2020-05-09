@@ -18,7 +18,7 @@ const Home = () => (
     </section>
 
     <div id="ctas" />
-    <section className="pb-6 md:pb-24 bg-accent">
+    <section className="pb-6 md:pb-24">
       <MainCTA />
     </section>
     
@@ -67,7 +67,7 @@ const Home = () => (
     </section>
 
     <div id="sponsors" />
-    <section className="py-12 md:py-24">
+    <section className="py-12 md:py-24 bg-accent">
       <Sponsors />
     </section>
 
