@@ -4,6 +4,20 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+.is-sticky .sticky-inner-wrapper {
+  z-index: 50;
+}
+
+.services-bg {
+  background-image: url('/images/services-background.png');
+}
+
+@media (max-width: 767px) {
+  .services-bg {
+    background-image: none;
+  }
+}
+
 .transform-neg-50 {
   transform: translateY(-50%);
 }
@@ -48,10 +62,6 @@
   .ais-SearchBox {
     width: 80%;
   }
-}
-
-.rob {
-  width: 100%;
 }
 
 .ais-SearchBox form, .ais-SearchBox input {
@@ -139,12 +149,7 @@
 .ais-Pagination-item--lastPage * {
   height: 100%;
 }
-.pad-Bottom {
-  padding-bottom: 25px;
-}
-.pad-Top {
-  padding-top: 25px;
-}
+
 @media only screen and (max-width: 600px) {
   .ais-Pagination-item {
     font-size: 1.3rem;
@@ -159,5 +164,3 @@
     padding: 1.25rem 1.25rem 1.4rem 1.25rem;
   }
 }
-
-

@@ -13,7 +13,7 @@ const socialHandles = [
     title: 'Instagram URL',
     inputType: 'text',
     placeholder: '@instagram-handle',
-    pattern: /^(?:https?:\/\/(www\.)?instagram\.com\/([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\.(?!\.))){0,28}(?:[A-Za-z0-9_]))\/?)|@[A-z0-9_\-\.]+)$/,
+    pattern: /^(?:https?:\/\/(www\.)?instagram\.com\/([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\.(?!\.))){0,28}(?:[A-Za-z0-9_]))\/?)|@[A-z0-9_\-.]+)$/,
     patternMessage: 'Please enter a valid Instagram handle or URL',
     required: false,
   },
@@ -22,7 +22,7 @@ const socialHandles = [
     title: 'Facebook URL',
     inputType: 'text',
     placeholder: '@facebook-handle',
-    pattern: /^(?:http(s)?:\/\/(www\.)?(facebook|fb)\.com\/[A-z0-9_\-\.]+\/?|@[A-z0-9_\-\.]+)$/,
+    pattern: /^(?:http(s)?:\/\/(www\.)?(facebook|fb)\.com\/[A-z0-9_\-.]+\/?|@[A-z0-9_\-.]+)$/,
     patternMessage: 'Please enter a valid Facebook URL',
     required: false,
   },
@@ -31,11 +31,11 @@ const socialHandles = [
     title: 'Yelp URL',
     inputType: 'text',
     placeholder: 'http://yelp.com/biz/<company>',
-    pattern: /^http(s)?:\/\/(.*\.)?yelp\.com\/biz\/[@A-z0-9_\-\.]+\/?$/,
+    pattern: /^http(s)?:\/\/(.*\.)?yelp\.com\/biz\/[@A-z0-9_\-.]+\/?$/,
     patternMessage: 'Please enter a valid Yelp URL',
     required: false,
-  }
-]
+  },
+];
 
 // TODO: make call to get Forms from Zendesk and then grab regex
 const forms = {
@@ -43,7 +43,6 @@ const forms = {
     id: 'apply',
     title: 'How Can We Help?',
     buttonText: 'Apply Now',
-    // fields should be in order of display
     fields: [
       {
         id: 'company_name',
@@ -69,7 +68,7 @@ const forms = {
         id: 'company_phone',
         title: 'Company Phone',
         placeholder: '(XXX) YYY-ZZZZ',
-        pattern: /^(1\s?)?(((?:\(|-)?[0-9]{3}(?:\)|-)?)|[0-9]{3})[\s\-]?[\0-9]{3}[\s\-]?[0-9]{4}$/,
+        pattern: /^(1\s?)?(((?:\(|-)?[0-9]{3}(?:\)|-)?)|[0-9]{3})[\s-]?[\0-9]{3}[\s-]?[0-9]{4}$/,
         patternMessage: 'Please format as (XXX) YYY-ZZZZ',
         inputType: 'text',
         required: false,
@@ -103,28 +102,6 @@ const forms = {
         placeholder: 'What type(s) of things do you sell/offer?',
         required: true,
       },
-      // {
-      //   id: 'product_size',
-      //   title: 'Average product size (lbs)',
-      //   inputType: 'dropdown',
-      //   required: true,
-      //   options: [
-      //     { label: 'Option 1', value: 'type-1' },
-      //     { label: 'Option 2', value: 'type-2' },
-      //     { label: 'Option 3', value: 'type-3' }
-      //   ]
-      // },
-      // {
-      //   id: 'years_in_business',
-      //   title: 'Years In Business',
-      //   inputType: 'dropdown',
-      //   required: true,
-      //   options: [
-      //     { label: 'Option 1', value: '0-2' },
-      //     { label: 'Option 2', value: 'type-2' },
-      //     { label: 'Option 3', value: 'type-3' }
-      //   ]
-      // },
       {
         id: 'employee_count',
         title: '# of Employees',
@@ -133,20 +110,9 @@ const forms = {
         options: [
           { label: '0 - 5', value: 'employees-zero-five' },
           { label: '6 - 20', value: 'employees-six-twenty' },
-          { label: '20+', value: 'employees-twenty-plus' }
-        ]
+          { label: '20+', value: 'employees-twenty-plus' },
+        ],
       },
-      // {
-      //   id: 'yearly_revenue',
-      //   title: 'Yearly Revenue',
-      //   inputType: 'dropdown',
-      //   required: true,
-      //   options: [
-      //     { label: 'Option 1', value: 'type-1' },
-      //     { label: 'Option 2', value: 'type-2' },
-      //     { label: 'Option 3', value: 'type-3' }
-      //   ]
-      // },
       {
         id: 'location_count',
         title: '# of Locations',
@@ -155,8 +121,8 @@ const forms = {
         options: [
           { label: '1', value: 'locations-one' },
           { label: '2 - 4', value: 'locations-two-four' },
-          { label: '5+', value: 'locations-five-plus' }
-        ]
+          { label: '5+', value: 'locations-five-plus' },
+        ],
       },
       {
         id: 'website_url',
@@ -175,8 +141,8 @@ const forms = {
           { label: 'I Need Help Getting In Place', value: 'ecommerce-need-help' },
           { label: 'It\'s There Already, But Need Help Optimizing', value: 'ecommerce-need-optimization' },
           { label: 'It\'s Already In Place', value: 'ecommerce-already-configured' },
-          { label: 'Not Needed At This Time', value: 'ecommerce-dont-need' }
-        ]
+          { label: 'Not Needed At This Time', value: 'ecommerce-dont-need' },
+        ],
       },
       {
         id: 'current_delivery',
@@ -187,8 +153,8 @@ const forms = {
           { label: 'Not Yet', value: 'delivery-not-yet' },
           { label: 'I Need Help Getting In Place', value: 'delivery-need-help' },
           { label: 'It\'s Already In Place', value: 'delivery-already-configured' },
-          { label: 'Not Needed At This Time', value: 'delivery-dont-need' }
-        ]
+          { label: 'Not Needed At This Time', value: 'delivery-dont-need' },
+        ],
       },
       {
         id: 'current_shipping',
@@ -199,15 +165,15 @@ const forms = {
           { label: 'Not Yet', value: 'shipping-not-yet' },
           { label: 'I Need Help Getting It Set Up', value: 'shipping-need-help' },
           { label: 'It\'s Already In Place', value: 'shipping-already-configured' },
-          { label: 'Not Needed At This Time', value: 'shipping-dont-need' }
-        ]
+          { label: 'Not Needed At This Time', value: 'shipping-dont-need' },
+        ],
       },
       {
         id: 'social_handles',
         inputType: 'group',
-        fields: socialHandles
+        fields: socialHandles,
       },
-    ]
+    ],
   },
   referForm: {
     id: 'refer',
@@ -250,7 +216,7 @@ const forms = {
         id: 'company_phone',
         title: 'Company Phone',
         placeholder: '(XXX) YYY-ZZZZ',
-        pattern: /^(1\s?)?(((?:\(|-)?[0-9]{3}(?:\)|-)?)|[0-9]{3})[\s\-]?[\0-9]{3}[\s\-]?[0-9]{4}$/,
+        pattern: /^(1\s?)?(((?:\(|-)?[0-9]{3}(?:\)|-)?)|[0-9]{3})[\s-]?[\0-9]{3}[\s-]?[0-9]{4}$/,
         patternMessage: 'Please format as (XXX) YYY-ZZZZ',
         inputType: 'text',
         required: false,
@@ -271,9 +237,9 @@ const forms = {
       {
         id: 'social_handles',
         inputType: 'group',
-        fields: socialHandles
+        fields: socialHandles,
       },
-    ]
+    ],
   },
   helpForm: {
     id: 'help',
@@ -310,8 +276,8 @@ const forms = {
         placeholder: 'What kind of support can you help provide?',
         required: true,
       },
-    ]
-  }
-}
+    ],
+  },
+};
 
-export default forms
+export default forms;

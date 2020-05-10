@@ -3,12 +3,16 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/sections/Hero';
 import SEO from '../components/layout/SEO';
-import SizeOfSmall from '../components/sections/SizeOfSmall';
-import Articles from '../components/sections/Articles';
-import HowCanIHelp from '../components/sections/HowCanIHelp';
-import WhatWeDo from '../components/sections/WhatWeDo';
+import ArticleQuotes from '../components/sections/ArticleQuotes';
 import MainCTA from '../components/sections/MainCTA';
+import ContentCarousel from '../components/sections/ContentCarousel';
 import Sponsors from '../components/sections/Sponsors';
+import SaveMomPop from '../components/sections/SaveMomPop';
+import Services from '../components/sections/Services';
+
+import noiseAccent from '../assets/images/noise-yellow.jpg';
+import noisePrimary from '../assets/images/noise-blue.jpg';
+import noiseSecondary from '../assets/images/noise-red.jpg';
 
 const Home = () => (
   <Layout>
@@ -18,56 +22,49 @@ const Home = () => (
     </section>
 
     <div id="ctas" />
-    <section className="pb-6 md:pb-24">
+    <section>
       <MainCTA />
     </section>
-    
+
+    <div className="border-t-2 border-dotted border-primary-light" />
+
     <div id="articles" />
     <section>
-      <Articles />
+      <ArticleQuotes />
     </section>
 
     <div id="small-is-massive" />
-    <section>
-      small is massive section
+    <section
+      style={{
+        backgroundImage: `url(${noisePrimary})`,
+      }}
+      className="bg-primary"
+    >
+      <ContentCarousel />
     </section>
 
     <div id="save-mom-and-pops" />
-    <section>
-     mom and pops section
+    <section
+      style={{
+        backgroundImage: `url(${noiseSecondary})`,
+      }}
+      className="bg-secondary"
+    >
+      <SaveMomPop />
     </section>
+
     <div id="big-agency-help" />
     <section>
-      big agency help
-    </section>
-
-    <div id="submit-a-business" />
-    <section>
-    <HowCanIHelp />
-    </section>
-
-    <div id="people-on-board" />
-    <section className="py-8 md:py-20">
-      people on board section
-    </section>
-
-    <div id="end-of-sections" />
-    <section className="py-8 md:py-20">
-      end of sections
-    </section>
-
-    <div id="how-you-can-help" />
-    <section className="py-8 md:py-20">
-      <HowCanIHelp />
-    </section>
-
-    <div id="how-we-can-help" />
-    <section className="py-8 md:py-20 bg-accent">
-      <WhatWeDo />
+      <Services />
     </section>
 
     <div id="sponsors" />
-    <section className="py-12 md:py-24 bg-accent">
+    <section
+      style={{
+        backgroundImage: `url(${noiseAccent})`,
+      }}
+      className="bg-accent"
+    >
       <Sponsors />
     </section>
 

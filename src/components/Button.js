@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
 
 const sizes = {
@@ -10,30 +11,30 @@ const sizes = {
 const renderLinkColor = (color) => {
   switch (color) {
     case 'secondary': {
-      return 'bg-secondary text-light hover:bg-secondary-darker'
+      return 'bg-secondary text-light hover:bg-secondary-darker';
     }
     case 'dark': {
-      return 'bg-dark text-light hover:bg-primary-darker'
+      return 'bg-dark text-light hover:bg-primary-darker';
     }
     default: {
-      return 'bg-primary text-light hover:bg-primary-darker'
+      return 'bg-primary text-light hover:bg-primary-darker';
     }
   }
-}
+};
 
 const renderButtonColor = (color) => {
   switch (color) {
     case 'primary': {
-      return 'bg-primary text-light hover:bg-primary-darker'
+      return 'bg-primary text-light hover:bg-primary-darker';
     }
     case 'dark': {
-      return 'bg-dark text-light hover:bg-primary-darker'
+      return 'bg-dark text-light hover:bg-primary-darker';
     }
     default: {
-      return 'bg-secondary text-light hover:bg-secondary-darker'
+      return 'bg-secondary text-light hover:bg-secondary-darker';
     }
   }
-}
+};
 
 const Button = ({
   children,
