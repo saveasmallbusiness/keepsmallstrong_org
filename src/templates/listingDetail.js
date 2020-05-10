@@ -1,5 +1,4 @@
 import React from 'react';
-import Search from '../components/sections/Search';
 import Marketplace from '../pages/marketplace';
 
 const ListingDetailPage = ({

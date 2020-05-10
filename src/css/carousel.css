@@ -1,0 +1,47 @@
+/* react-responsive-carousel overrides */
+.carousel .slide { 
+  background: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none;
+}
+
+.carousel.carousel-slider .control-arrow {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 16px solid #fff;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 16px solid #fff;
+}
+
+.carousel.carousel-slider .control-arrow:before, .carousel .control-arrow:before {
+  margin: 0 10px;
+  display: inline-block;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  content: "";
+}
+
+.carousel .control-dots .dot {
+  transition: opacity .25s ease-in;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  box-shadow: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px 8px 10px;
+}
+
+.carousel .control-dots .dot:focus {
+  outline: none;
+}

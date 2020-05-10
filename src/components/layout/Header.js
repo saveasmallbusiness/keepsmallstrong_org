@@ -1,65 +1,59 @@
 import React, { useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faTwitter,
-  faInstagram,
-  faFacebook,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
 
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import theme from '../../../tailwind.config';
-import logo from '../../assets/images/logo.png';
-import SocialIcons from '../SocialIcons';
+import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 
-const Header = () => {
-  const [navOpen, setNavOpen] = useState(false);
+const Header = ({ isSticky }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const navClass = `flex items-center justify-between flex-wrap p-6 w-full fixed z-10 top-0 bg-light md:bg-opacity-50 ${expanded && `bg-accent bg-opacity-75 md:bg-opacity-75`}`
+  const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && `hidden`} lg:block pt-6 lg:pt-0`;
+
   return (
-    <>
-    <header className="relative top-0 bg-light">
-      <div className="relative container py-4 flex justify-center md:center md:content-center h-auto md:h-20 mx-auto">
-        {/* <button
-        onClick={() => setNavOpen(!navOpen)}
-          className="outline-none flex left-0 top-1/2 transform-neg-50 md:transform-none md:w-1/6 md:top-auto md:translate-0 mx-4 absolute md:relative">
-          <FontAwesomeIcon
-            color={theme.theme.extend.colors.dark.default}
-            icon={faBars}
-            size="2x"
-          />
-        </button> */}
-        {/* <div className={`${navOpen ? 'max-h-500' : 'max-h-0'} pr-16 bg-light top-20 absolute left-0 overflow-hidden absolute z-50 transition-all duration-500 ease-in-out`}>
-          <ul className="px-4">
-            <li className="text-3xl mb-3">
-              <Link to="/mission">Our Mission</Link>
-            </li>
-            <li className="text-3xl mb-3">
-              <Link to="/apply">Apply</Link>
-            </li>
-            <li className="text-3xl mb-3">
-              <Link to="/mission">Save Your Local</Link>
-            </li>
-            <li className="text-3xl mb-3">
-              <Link to="/mission">Shop Local</Link>
-            </li>
-            <li className="text-3xl mb-3">
-              <Link to="/mission">Donate</Link>
-            </li>
-          </ul>
-        </div> */}
-        <div className="flex w-full px-8 md:px-2 py-2 md:py-0 font-headline font-semibold text-2xl text-secondary items-center text-center uppercase flex justify-center">
+    <nav className={navClass}>
+      <div
+        style={{ height: 31 }}
+        className="flex items-center flex-shrink-0 mr-6"
+      >
+        {(isSticky || expanded) && (
           <Link to="/">
-            <img src={logo} alt="Keep Small Strong" />
+            <img
+              src={hashtag}
+              alt="#KeepSmallStrong"
+              style={{
+                height: 30,
+                width: 'auto',
+                margin: '0px auto',
+              }}
+            />
           </Link>
-        </div>
+        )}
       </div>
-    </header>
-    <div className="absolute top-0 right-0 mt-6">
-      <SocialIcons />
-    </div>
-    </>
-  );
-};
+
+      <div className="block lg:hidden">
+        <button
+          className="flex items-center px-3 py-2 border-2 border-rounded text-primary border-primary"
+          onClick={() => setExpanded(!expanded)}
+        >
+          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+
+      <div className={menuClass}>
+        <ul className="list-reset lg:flex justify-end flex-1 items-center">
+          <li className="py-4 lg:py-0 lg:inline lg:px-4">
+            <Link to="/apply">Submit a Business</Link>
+          </li>
+          <li className="py-4 lg:py-0 lg:inline lg:px-4">
+            <Link to="/help">Join our Team</Link>
+          </li>
+          <li className="py-4 lg:py-0 lg:inline lg:pl-4">
+            <Link to="/marketplace">Shop the Marketplace</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  )
+}
 
 export default Header;
