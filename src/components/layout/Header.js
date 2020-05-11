@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 
 import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 
-const Header = ({ isSticky }) => {
+const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const navClass = `flex items-center justify-between flex-wrap p-6 w-full fixed z-10 top-0 bg-light md:bg-opacity-50 ${expanded && `bg-accent bg-opacity-75 md:bg-opacity-75`}`
-  const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && `hidden`} lg:block pt-6 lg:pt-0`;
+  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full top-0 bg-light md:bg-opacity-75 ${expanded && 'bg-accent bg-opacity-75 md:bg-opacity-75'}`;
+  const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && 'hidden'} lg:block pt-6 lg:pt-0`;
 
   return (
     <nav className={navClass}>
@@ -15,23 +15,22 @@ const Header = ({ isSticky }) => {
         style={{ height: 31 }}
         className="flex items-center flex-shrink-0 mr-6"
       >
-        {(isSticky || expanded) && (
-          <Link to="/">
-            <img
-              src={hashtag}
-              alt="#KeepSmallStrong"
-              style={{
-                height: 30,
-                width: 'auto',
-                margin: '0px auto',
-              }}
-            />
-          </Link>
-        )}
+        <Link to="/">
+          <img
+            src={hashtag}
+            alt="#KeepSmallStrong"
+            style={{
+              height: 25,
+              width: 'auto',
+              margin: '0px auto',
+            }}
+          />
+        </Link>
       </div>
 
       <div className="block lg:hidden">
         <button
+          type="button"
           className="flex items-center px-3 py-2 border-2 border-rounded text-primary border-primary"
           onClick={() => setExpanded(!expanded)}
         >
@@ -53,7 +52,7 @@ const Header = ({ isSticky }) => {
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Header;
