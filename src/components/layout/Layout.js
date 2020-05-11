@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
       {/* <Sticky enabled top={0} onStateChange={handleStateChange} activeClass="is-sticky"> */}
       <Header />
       {/* </Sticky> */}
-      <main className="text-gray-900">{children}</main>
+      <main className="text-gray-900 pt-12 md:pt-24">{children}</main>
       <PreFooter />
       <Footer />
     </div>
