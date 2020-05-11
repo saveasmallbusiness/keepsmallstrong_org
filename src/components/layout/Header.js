@@ -6,7 +6,7 @@ import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full top-0 bg-light md:bg-opacity-75 ${expanded && 'bg-accent bg-opacity-75 md:bg-opacity-75'}`;
+  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light md:bg-opacity-75 ${expanded && 'bg-accent bg-opacity-75 md:bg-opacity-75'}`;
   const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && 'hidden'} lg:block pt-6 lg:pt-0`;
 
   return (
