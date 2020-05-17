@@ -15,7 +15,7 @@ const MainCTA = () => (
       <div className="md:flex-1 mx-2 text-center md:text-right mb-4 md:mb-0">
         <Button
           className="bg-accent md:w-8/12 lg:w-auto rounded-full"
-          onClick={() => navigate('/apply')}
+          onClick={() => navigate('/#get-help')}
         >
           <span className="text-sm md:text-md lg:text-lg">get a business help</span>
         </Button>

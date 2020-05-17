@@ -36,6 +36,11 @@ module.exports = {
           default: 'hsl(240, 25%, 18%)',
           darker: 'hsl(240, 25%, 18%)',
         },
+        grey: {
+          lighter: 'hsl(0, 0%, 80%)',
+          default: 'hsl(0, 0%, 50%)',
+          darker: 'hsl(0, 0%, 20%)',
+        },
       },
     },
     inset: {

@@ -11,7 +11,7 @@ import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 import theme from '../../../tailwind.config';
 
 const Footer = () => (
-  <footer className="py-12 md:py-24">
+  <footer className="pt-8 md:pt-20 pb-6 md:pb-12">
     <div className="md:container mx-6 md:mx-auto text-center">
       <div className="py-2">
         <img
@@ -40,7 +40,7 @@ const Footer = () => (
           <a href="/mission">Our Mission</a>
         </div>
         <div className="inline mx-4">
-          <a href="/help">Join our Team</a>
+          <a href="/help">Join the Movement</a>
         </div>
       </div>
       <div className="mt-2 md:flex md:justify-center md:items-center">
@@ -93,7 +93,7 @@ const Footer = () => (
           />
         </a>
       </div>
-      <div className="py-2 mt-12 text-sm flex flex-col md:flex-row justify-center">
+      <div className="pt-2 mt-12 text-sm flex flex-col md:flex-row justify-center">
         <a href="/privacy">Privacy Policy</a>
       </div>
     </div>

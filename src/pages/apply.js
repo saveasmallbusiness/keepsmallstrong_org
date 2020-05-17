@@ -17,6 +17,8 @@ const GetStarted = () => (
           <div className="lg:w-5/12 mb-8 lg:mb-0 md:pl-4 md:pr-10">
             <p className="text-xl font-headline uppercase mb-4">We're Here To Help</p>
             <h3 className="text-5xl font-headline uppercase leading-none mb-3">
+              Your
+              <br />
               Small Business
               <br />
               In Need
@@ -34,6 +36,9 @@ const GetStarted = () => (
             </p>
             <p className="py-4">
               Apply today to see if we can help you get going online or just to let the community know you need their support!
+            </p>
+            <p className="py-4">
+              Not your business, but want to refer a small business who could use our help? <a href="/refer">Click here</a> to get them help.
             </p>
           </div>
           <div className="lg:w-7/12 mb-8 lg:mb-0 md:px-4">

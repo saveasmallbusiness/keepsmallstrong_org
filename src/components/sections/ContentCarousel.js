@@ -27,7 +27,7 @@ const ContentCarousel = () => (
           <br />
           actually massive
         </h3>
-        <p className="leading-snug pb-6 md:pb-0">More than 99&#37; of businesses are a small business.</p>
+        <div className="leading-snug md:w-3/4 pb-6 md:pb-0">Call them Small. Just not by measure of their ambition, their work ethic, or least of all, their contribution.  The numbers are staggering. A world without SMALL is one we just can not accept. </div>
       </div>
       <div className="md:w-1/2 mx-12 md:mx-0">
         <img alt="small is actually massive" src={img99percent} />

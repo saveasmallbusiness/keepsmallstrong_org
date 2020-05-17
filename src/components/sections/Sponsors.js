@@ -15,11 +15,11 @@ import Zendesk from '../../assets/sponsors/Zendesk.png';
 import UPS from '../../assets/sponsors/UPS.png';
 
 const Sponsors = () => (
-  <div className="container md:mx-auto lg:flex lg:items-center lg:justify-center py-8 sm:pt-24 md:pb-12">
+  <div className="container md:mx-auto lg:flex lg:justify-center py-8 sm:pt-24 md:pb-12">
     <div className="lg:w-1/3 text-left mx-6 sm:mx-12 sm:mb-12">
-      <h3 className="font-heading font-bold text-2xl sm:text-4xl uppercase text-secondary leading-tight pb-4 md:pb-8">The People On Board</h3>
+      <h3 className="font-heading font-bold text-2xl sm:text-4xl uppercase text-secondary leading-tight pb-4 md:pb-8">An Inspired Collective</h3>
       <p>
-        Like any great endeavor, this too starts small. Brought to you by incredible humans, who work for some amazing companies, lending their time to help save thousands of small businesses from closing their doors.
+        Like any great endeavor, this too starts small. Brought to you by incredible humans, who work for some amazing companies, lending their individual time to help save thousands of small businesses from closing their doors.
       </p>
     </div>
     <div className="lg:w-2/3 mx-6 sm:mx-12 lg:mx-0">
@@ -75,22 +75,22 @@ const Sponsors = () => (
       </p>
       <div className="sm:flex sm:flex-wrap sm:items-center sm:justify-center mx-auto">
         <div className="px-6 pb-12">
-          <a href="https://ups.com" target="_blank" rel="noopener noreferrer">
-            <img className="mx-auto" style={{ maxHeight: 70 }} src={UPS} alt="UPS" />
-          </a>
-        </div>
-        <div className="px-6 pb-12">
           <a href="https://algolia.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 35 }} src={Algolia} alt="Algolia" />
           </a>
         </div>
         <div className="px-6 pb-12">
-          <a href="https://shopify.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://shopify.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 35 }} src={Shopify} alt="Shopifu" />
           </a>
         </div>
         <div className="px-6 pb-12">
-          <a href="https://www.zendesk.com/us-en/" target="_blank" rel="noopener noreferrer">
+          <a href="https://ups.com" target="_blank" rel="noopener noreferrer">
+            <img className="mx-auto" style={{ maxHeight: 70 }} src={UPS} alt="UPS" />
+          </a>
+        </div>
+        <div className="px-6 pb-12">
+          <a href="https://www.zendesk.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 70 }} src={Zendesk} alt="Zendesk" />
           </a>
         </div>
