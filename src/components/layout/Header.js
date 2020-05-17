@@ -6,8 +6,9 @@ import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light md:bg-opacity-75 ${expanded && 'bg-accent bg-opacity-75 md:bg-opacity-75'}`;
+  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light ${expanded && 'bg-secondary'}`;
   const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && 'hidden'} lg:block pt-6 lg:pt-0`;
+  const navItemClass = `py-2 lg:inline lg:px-4 uppercase ${expanded && 'text-white'}`
 
   return (
     <nav className={navClass}>
@@ -23,6 +24,9 @@ const Header = () => {
               height: 25,
               width: 'auto',
               margin: '0px auto',
+              ...expanded && {
+                filter: 'brightness(0) invert(1)'
+              }
             }}
           />
         </Link>
@@ -40,13 +44,13 @@ const Header = () => {
 
       <div className={menuClass}>
         <ul className="list-reset lg:flex justify-end flex-1 items-center">
-          <li className="py-4 lg:py-0 lg:inline lg:px-4">
+          <li className={navItemClass}>
             <Link to="/apply">Submit a Business</Link>
           </li>
-          <li className="py-4 lg:py-0 lg:inline lg:px-4">
-            <Link to="/help">Join our Team</Link>
+          <li className={navItemClass}>
+            <Link to="/help">Join the Movement</Link>
           </li>
-          <li className="py-4 lg:py-0 lg:inline lg:pl-4">
+          <li className={navItemClass}>
             <Link to="/marketplace">Shop the Marketplace</Link>
           </li>
         </ul>
