@@ -6,7 +6,7 @@ import forresterLogo from '../../assets/images/Forrester.png';
 import thriveLogo from '../../assets/images/thrive.png';
 
 const ArticleQuotes = () => (
-  <div className="container mx-auto py-6 md:py-20">
+  <div className="container mx-auto py-6 md:py-16">
     <div className="block md:flex">
       <a
         className="md:w-1/3 px-4 py-8 md:py-0 text-center"
@@ -14,7 +14,7 @@ const ArticleQuotes = () => (
         target="_blank"
       >
         <div className="mx-auto" style={{ maxWidth: 300, width: '100%' }}>
-          “Their initiative has a simple goal: to change the trajectory of as many small businesses as possible.”
+          “There are thousands and thousands of businesses who may not make it through this. Their initiative has a simple goal: to change the trajectory of as many small businesses as possible.”
         </div>
         <div className="pt-2 md:pt-8">
           <img src={forbesLogo} className="mx-auto" style={{ height: 35, width: 'auto' }} alt="Forbes" />
@@ -26,7 +26,7 @@ const ArticleQuotes = () => (
         target="_blank"
       >
         <div className="mx-auto" style={{ maxWidth: 300, width: '100%' }}>
-          “Commerce Tech "Inspired Individuals" Band Together To Save Small Businesses”
+          “The organization’s mission is to help small shops move online fast (think projects that are underway within days and fully functional within weeks), no strings attached.”
         </div>
         <div className="pt-2 md:pt-8">
           <img src={forresterLogo} className="mx-auto" style={{ height: 35, width: 'auto' }} alt="Forbes" />
@@ -38,7 +38,7 @@ const ArticleQuotes = () => (
         target="_blank"
       >
         <div className="mx-auto" style={{ maxWidth: 300, width: '100%' }}>
-          “This is a collective effort — anyone can join and can contribute in a number of ways.”
+          “The goal of #KeepSmallStrong is to change the downward trajectory of as many small businesses as possible. They are offering these businesses the expertise, experience, and technical solutions for free.”
         </div>
         <div className="pt-2 md:pt-8">
           <img src={thriveLogo} className="mx-auto" style={{ height: 30, width: 'auto' }} alt="VegNews" />
