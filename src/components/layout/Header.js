@@ -6,7 +6,7 @@ import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 const Header = ({ isSticky }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light ${expanded && 'bg-secondary'}`;
+  const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light ${expanded && 'bg-secondary'} ${(isSticky && !expanded) && 'bg-opacity-90'}`;
   const menuClass = `w-full flex-grow lg:flex lg:items-center lg:w-auto ${!expanded && 'hidden'} lg:block pt-6 lg:pt-0`;
   const navItemClass = `py-2 lg:inline lg:px-4 uppercase ${expanded && 'text-white'}`
 
@@ -16,7 +16,7 @@ const Header = ({ isSticky }) => {
         style={{ height: 31 }}
         className="flex items-center flex-shrink-0 mr-6"
       >
-        {isSticky && (
+        {(isSticky || expanded) && (
           <Link to="/">
             <img
               src={hashtag}
