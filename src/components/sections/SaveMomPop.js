@@ -2,13 +2,17 @@ import React from 'react';
 import { navigate } from 'gatsby';
 
 import Button from '../Button';
-import card1 from '../../assets/images/small-business-ideas.jpg';
+import card1 from '../../assets/images/lartisanebakery.jpg';
+import card2 from '../../assets/images/forestandash.jpg';
+import card3 from '../../assets/images/ysabelvintage.jpg';
+import card4 from '../../assets/images/jantu.jpg';
 
-const BusinessCard = ({ image, title }) => (
+const BusinessCard = ({ image, title, slug }) => (
   <div className="md:w-1/2 mx-6 md:mx-1 my-12 md:my-4">
     <div
       style={{ backgroundImage: `url(${image})` }}
-      className="relative bg-accent rounded-lg h-40 bg-cover"
+      className="relative bg-accent rounded-lg h-40 bg-cover bg-center cursor-pointer"
+      onClick={() => navigate(`/marketplace/${slug}`)}
     >
       <div
         style={{ bottom: -16, left: 8 }}
@@ -43,12 +47,12 @@ const SaveMomPop = () => (
     </div>
     <div className="md:mx-12 lg:mx-0 md:py-12 lg:py-0 lg:w-2/3">
       <div className="md:flex">
-        <BusinessCard image={card1} title="American Artisans" />
-        <BusinessCard image={card1} title="American Artisans" />
+        <BusinessCard image={card1} title="L'Artisane Creative Bakery" slug="lartisane-creative-bakery"/>
+        <BusinessCard image={card2} title="Forest + Ash" slug="forest-ash"/>
       </div>
       <div className="md:flex">
-        <BusinessCard image={card1} title="American Artisans" />
-        <BusinessCard image={card1} title="American Artisans" />
+        <BusinessCard image={card3} title="Ysabel Vintage Online" slug="ysabel-vintage-online"/>
+        <BusinessCard image={card4} title="Jan Tu's Pearls" slug="jan-tus-pearls"/>
       </div>
     </div>
   </div>
