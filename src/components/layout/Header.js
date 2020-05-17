@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import hashtag from '../../assets/images/keep-small-strong-hashtag.png';
 
-const Header = () => {
+const Header = ({ isSticky }) => {
   const [expanded, setExpanded] = useState(false);
 
   const navClass = `flex items-center justify-between flex-wrap py-6 px-4 sm:px-6 w-full fixed z-50 top-0 bg-light ${expanded && 'bg-secondary'}`;
@@ -16,20 +16,22 @@ const Header = () => {
         style={{ height: 31 }}
         className="flex items-center flex-shrink-0 mr-6"
       >
-        <Link to="/">
-          <img
-            src={hashtag}
-            alt="#KeepSmallStrong"
-            style={{
-              height: 25,
-              width: 'auto',
-              margin: '0px auto',
-              ...expanded && {
-                filter: 'brightness(0) invert(1)'
-              }
-            }}
-          />
-        </Link>
+        {isSticky && (
+          <Link to="/">
+            <img
+              src={hashtag}
+              alt="#KeepSmallStrong"
+              style={{
+                height: 25,
+                width: 'auto',
+                margin: '0px auto',
+                ...expanded && {
+                  filter: 'brightness(0) invert(1)'
+                }
+              }}
+            />
+          </Link>
+        )}
       </div>
 
       <div className="block lg:hidden">
