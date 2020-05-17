@@ -62,6 +62,7 @@ module.exports = {
           'bg-secondary',
           'bg-accent',
           'bg-dark',
+          'bg-grey',
           'carousel',
           'services-bg',
           'is-sticky',
