@@ -75,22 +75,22 @@ const Sponsors = () => (
       </p>
       <div className="sm:flex sm:flex-wrap sm:items-center sm:justify-center mx-auto">
         <div className="px-6 pb-12">
-          <a href="https://ups.com" target="_blank" rel="noopener noreferrer">
-            <img className="mx-auto" style={{ maxHeight: 70 }} src={UPS} alt="UPS" />
-          </a>
-        </div>
-        <div className="px-6 pb-12">
           <a href="https://algolia.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 35 }} src={Algolia} alt="Algolia" />
           </a>
         </div>
         <div className="px-6 pb-12">
-          <a href="https://shopify.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://shopify.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 35 }} src={Shopify} alt="Shopifu" />
           </a>
         </div>
         <div className="px-6 pb-12">
-          <a href="https://www.zendesk.com/us-en/" target="_blank" rel="noopener noreferrer">
+          <a href="https://ups.com" target="_blank" rel="noopener noreferrer">
+            <img className="mx-auto" style={{ maxHeight: 70 }} src={UPS} alt="UPS" />
+          </a>
+        </div>
+        <div className="px-6 pb-12">
+          <a href="https://www.zendesk.com" target="_blank" rel="noopener noreferrer">
             <img className="mx-auto" style={{ maxHeight: 70 }} src={Zendesk} alt="Zendesk" />
           </a>
         </div>
