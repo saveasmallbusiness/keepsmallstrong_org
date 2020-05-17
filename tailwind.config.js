@@ -56,6 +56,7 @@ module.exports = {
   },
   variants: {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: ['transform'],
 };

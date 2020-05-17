@@ -11,12 +11,12 @@ const BusinessCard = ({ image, title, slug }) => (
   <div className="md:w-1/2 mx-6 md:mx-1 my-12 md:my-4">
     <div
       style={{ backgroundImage: `url(${image})` }}
-      className="relative bg-accent rounded-lg h-40 bg-cover bg-center cursor-pointer"
+      className="group relative bg-accent rounded-lg h-40 bg-cover bg-center cursor-pointer"
       onClick={() => navigate(`/marketplace/${slug}`)}
     >
       <div
         style={{ bottom: -16, left: 8 }}
-        className="bg-accent rounded-full absolute text-sm p-1 px-4"
+        className="bg-accent group-hover:bg-primary rounded-full absolute text-sm p-1 px-4"
       >
         {title}
       </div>
