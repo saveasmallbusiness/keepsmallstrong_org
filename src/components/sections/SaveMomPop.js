@@ -39,10 +39,10 @@ const SaveMomPop = () => (
         Shop small where you can and use this resource to connect you to small businesses in your community and others.
       </p>
       <Button
-        className="bg-accent rounded-full"
+        className="bg-accent rounded-full text-dark"
         onClick={() => navigate('/marketplace')}
       >
-        <span className="text-sm lg:text-md">shop the Marketplace</span>
+        <span className="text-sm lg:text-md">shop the marketplace</span>
       </Button>
     </div>
     <div className="md:mx-12 lg:mx-0 md:py-12 lg:py-0 lg:w-2/3">
