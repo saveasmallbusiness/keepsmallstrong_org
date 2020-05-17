@@ -4,6 +4,11 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+/* NOT SURE WHY THIS ONLY HOLDS WITH IMPORTANT */
+*:focus {
+  outline: none!important;
+}
+
 .is-sticky .sticky-inner-wrapper {
   z-index: 999;
 }
