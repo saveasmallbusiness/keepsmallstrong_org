@@ -29,7 +29,7 @@ const Home = () => (
     <div className="border-t-2 border-dotted border-primary-light" />
 
     <div id="articles" />
-    <section>
+    <section className="bg-grey-lighter bg-opacity-25">
       <ArticleQuotes />
     </section>
 
