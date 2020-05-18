@@ -6,7 +6,7 @@ import p3 from '../../assets/images/p3.png';
 import p4 from '../../assets/images/small-business-ideas.jpg';
 import p5 from '../../assets/images/p5.png';
 
-const PreFooter = () => (
+const PhotoStrip = () => (
   <div className="flex">
     <div className="w-1/2 lg:w-1/5">
       <img src={p1} height="100%" width="auto" alt="#KeepSmallStrong" />
@@ -26,4 +26,4 @@ const PreFooter = () => (
   </div>
 );
 
-export default PreFooter;
+export default PhotoStrip;

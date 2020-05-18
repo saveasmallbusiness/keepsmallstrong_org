@@ -5,6 +5,10 @@ module.exports = {
       body: ['Raleway', 'Helvetica', 'Arial', 'sans-serif'],
     },
     extend: {
+      opacity: {
+        10: '0.1',
+        90: '0.90'
+      },
       colors: {
         light: {
           lighter: 'hsl(0, 40%, 98%)',
