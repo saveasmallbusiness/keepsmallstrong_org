@@ -53,7 +53,7 @@ const Header = ({ isSticky }) => {
             <Link to="/apply">Submit a Business</Link>
           </li>
           <li className={navItemClass}>
-            <Link to="/help">Join the Movement</Link>
+            <Link to="/help">Join the Collective</Link>
           </li>
           <li className={navItemClass}>
             <Link to="/marketplace">Shop the Marketplace</Link>
