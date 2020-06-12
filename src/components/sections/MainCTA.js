@@ -9,7 +9,7 @@ const MainCTA = () => (
       A collective effort to help small business in America
     </div>
     <div className="flex flex-col lg:flex-row mb-8 lg:text-xl leading-tight justify-center text-center">
-      offering online tools to grow digital business and a providing marketplace to buy direct.
+      offering online tools to grow digital business and providing a marketplace to buy direct.
     </div>
     <div className="block md:flex flex-col md:flex-row">
       <div className="md:flex-1 mx-2 text-center md:text-right mb-4 md:mb-0">
