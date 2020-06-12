@@ -243,7 +243,7 @@ const forms = {
   },
   helpForm: {
     id: 'help',
-    title: 'Join The Movement',
+    title: 'Join The Collective',
     buttonText: 'Support Small Business',
     // fields should be in order of display
     fields: [
