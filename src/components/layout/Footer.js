@@ -43,7 +43,7 @@ const Footer = () => (
             <a href="/mission">Our Mission</a>
           </div>
           <div className="inline mx-4">
-            <a href="/help">Join the Movement</a>
+            <a href="/help">Join the Collective</a>
           </div>
         </div>
         <div className="mt-2 md:flex md:justify-center md:items-center">

@@ -39,7 +39,7 @@ const HowCanIHelp = () => (
           concerned citizen who just wants to help, thank you.
         </p>
         <Button className="bg-dark w-8/12" onClick={() => navigate('/help')}>
-          <span className="text-xl">JOIN The Movement</span>
+          <span className="text-xl">JOIN The Collective</span>
         </Button>
       </div>
     </div>
